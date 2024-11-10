@@ -1,0 +1,103 @@
+<?xml version ='1.0' encoding ='utf-8'?>
+
+<!-- ====================== DEFINITIONS ====================== -->
+
+<definitions name="MyWebService"
+	     targetNamespace="http://localhost/Dubai_Books/Banbury/service.wsdl"
+	     xmlns="http://schemas.xmlsoap.org/wsdl/"
+	     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	     xmlns:tns="http://localhost/Dubai_Books/Banbury/service.wsdl"
+	     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- ====================== TYPES ============================ -->
+<!-- No need for type definitions as only xsd built-in ======= -->
+<!-- data types are used                                       -->
+<!-- ========================================================= -->
+
+<!-- ====================== MESSAGE ========================== -->
+
+<message name="proceedNewRequestBook_Request">
+   <part name="bookid" type="xsd:integer"/>
+   <part name="bookQuantity" type="xsd:integer"/>
+   <part name="customerid" type="xsd:integer"/>
+   <part name="cardNumber" type="xsd:integer"/>
+   <part name="address" type="xsd:string"/>
+</message>
+
+<message name="proceedNewRequestBook_Response">
+   <part name="xmlResult" type="xsd:string"/>
+</message>
+
+<message name="SearchAllBook_Request">
+   <part name="srchkey" type="xsd:string"/>
+   <part name="cuisine" type="xsd:string"/>
+   <part name="author" type="xsd:string"/>
+   <part name="cuisine" type="xsd:string"/>
+</message>
+
+<message name="SearchAllBook_Response">
+   <part name="xmlResult" type="xsd:string"/>
+</message>
+
+
+
+<!-- ====================== PORT TYPE ============================ -->
+
+<portType name="myWebService_PortType">
+
+   <operation name="proceedNewRequestBook">
+   	<input  message="tns:proceedNewRequestBook_Request"/>
+   	<output message="tns:proceedNewRequestBook_Response"/>
+   </operation>
+
+   <operation name="SearchAllBook">
+   	<input  message="tns:SearchAllBook_Request"/>
+   	<output message="tns:SearchAllBook_Response"/>
+   </operation>
+
+
+
+</portType>
+
+
+<!-- ======================= BINDING ============================= -->
+
+<binding name="myWebService_Binding" type="tns:myWebService_PortType">
+   <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+	<operation name="proceedNewRequestBook">
+	   <input>
+	     <soap:body use="literal"/>
+	   </input>
+	   <output>
+	     <soap:body use="literal"/>
+	   </output>
+	</operation>
+
+
+	<operation name="SearchAllBook">
+	   <input>
+	     <soap:body use="literal"/>
+	   </input>
+	   <output>
+	     <soap:body use="literal"/>
+	   </output>
+	</operation>
+	
+
+
+</binding>
+
+
+<!-- ======================= SERVICE ============================= -->
+
+<service name="myWebService_Service">
+	<port name="myWebService_Port" binding="tns:myWebService_Binding">
+	    <soap:address location="http://localhost/Dubai_Books/Banbury/server.php"/>
+	</port>
+</service>
+
+
+
+</definitions>

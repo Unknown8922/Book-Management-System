@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(135deg, #09203F, #537895);
+}
+
+header {
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+.book-text {
+  max-width: 600px;
+  margin-left: 5%; /* Adjust the left margin as needed */
+}
+
+.book-text h1 {
+  
+  margin-top: -20px; /* Reduce the top margin */
+  margin-bottom: 20px; /* Adjust the bottom margin */
+
+}
+
+/* Add any additional styling as necessary */
+
+section{
+  padding: 0 19%;
+}
+
+
+.book-text h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.book-img img{
+  width:700px;
+  height:auto;
+}
+.book-text a{
+  display: inline-block;
+  color: white;
+  background: #09203F;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+}
+.book-text a:hover{
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+.book-text a.ctaa{
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 20px;
+   margin-top: 50px;
+}
+.book-text a.ctaa i{
+  vertical-align:  middle;
+  margin-right:5px ;
+}
+
+.icons{
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50px);
+}
+.icons i{
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: white;
+  transition: all .50s ease;
+}
+.icons i:hover{
+  color: #537895;
+  transform: translateY(-5px);
+}
+.scroll-down{
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i{
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: white;
+  background:#09203F;
+  border-radius: 30px;
+  transition: all .50s ease;
+}
+.scroll-down i:hover{
+  transform: translateY(-5px);
+}
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #537895;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #ffff;
+  margin-left: 5%; /* Adjust the left margin as needed */
+  max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+.sec p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ffff;
+  margin-left: 5%; /* Adjust the left margin as needed */
+  max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+.history-img {
+  width: 50%; /* Adjust the width as needed */
+  margin-left: 50%; /* Adjust the margin as needed */
+  margin-top: -35%;
+}
+
+.history-img img {
+  width: 90%; /* Make the image fill the container */
+  height: 800px;
+}
+/* Add any existing styles you have */
+
+/* Add any existing styles you have */
+
+/* Add any existing styles you have */
+
+#wowslider-container1 {
+  position: relative;
+  top: 50px !important; /* Adjust the top position as needed */
+}
+
+#wowslider-container1 .ws_bullets {
+  bottom: 90px !important; /* Use !important to ensure it overrides other styles */
+}
+
+.text-book h1 {
+  
+  margin-top: 20px; /* Reduce the top margin */
+  margin-bottom: 10px; /* Adjust the bottom margin */
+
+}
+
+    .footer-icons {
+        text-align: center; /* Align icons in the center */
+        margin-top: 20px; /* Adjust the margin as needed */
+        display: flex; /* Use flex to display icons in a row */
+        justify-content: center; /* Center icons horizontally */
+    }
+
+    .footer-icons a {
+        margin: 0 10px; /* Adjust the spacing between icons */
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-icons a:hover {
+        color: #537895; /* Change color on hover */
+    }
+
