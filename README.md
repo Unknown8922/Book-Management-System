@@ -34,5 +34,5 @@ The Admin can add, edit, and remove suppliers, track orders, and manage all aspe
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript for a responsive and user-friendly interface.
-- **Backend**: PHP for server-side logic, with RESTful APIs to ensure smooth communication between the frontend and backend.
+- **Backend**: PHP for server-side logic
 - **Database**: MySQL with password hashing for secure data storage, including XML for data handling and exchange between components.
